@@ -1,17 +1,17 @@
 .welcome {
   background-color: #edf2ec;
-  max-width: 1440px;
-  margin: 0 auto;
+  padding: 62px 0;
 }
 
 .welcome-wrap {
   display: flex;
   justify-content: space-between;
-  padding: 0 70px;
+  align-items: center;
 
   .pic-leafs {
     display: flex;
-    width: 30%;
+    width: 449px;
+    height: 407px;
     order: 1;
 
     img {
@@ -23,7 +23,7 @@
   }
 
   .main-info {
-    width: 50%;
+    width: 549px;
     order: 2;
     .main-text-content {
       display: flex;
@@ -34,7 +34,7 @@
         font-weight: 700;
         font-size: 45px;
         line-height: 50px;
-        padding-bottom: 42px;
+        margin-bottom: 42px;
 
         span {
           display: inline-block;
@@ -48,7 +48,7 @@
         font-weight: 400;
         font-size: 20px;
         line-height: 35px;
-        padding-bottom: 48px;
+        margin-bottom: 48px;
       }
     }
     button {
@@ -57,58 +57,27 @@
       width: 158px;
       height: 44px;
       background-color: $light_green;
+      cursor: pointer;
+
+      // @media (max-width: 760px) {
+      // }
+      // @media (max-width: 760px) {
+      // }
+      // @media (max-width: 760px) {
+      // }
+      // @media (max-width: 760px) {
+      // }
     }
   }
-}
-
-@media (max-width: 760px) {
-  .welcome {
-    max-width: 760px;
+  @media (max-width: 760px) {
   }
-  .welcome-wrap {
-    padding: 0 35px;
+  // @media (max-width: 760px) {
 
-    .pic-leafs {
-      order: 2;
-      width: 40%;
-      height: 40%;
-    }
-    .main-info {
-      order: 1;
-      width: 60%;
-      .main-text-content {
-        h1 {
-          font-size: 35px;
-          padding-bottom: 30px;
-        }
-        p {
-          font-size: 16px;
-          padding-bottom: 30px;
-        }
-      }
-    }
-  }
-}
+  // }
+  // @media (max-width: 760px) {
 
-@media (max-width: 380px) {
-  .welcome-wrap {
-    // padding: 0 35px;
-    .pic-leafs {
-      display: none;
-    }
-    .main-info {
-      margin: 0 auto;
+  // }
+  // @media (max-width: 760px) {
 
-      .main-text-content {
-        h1 {
-          font-size: 25px;
-          padding-bottom: 30px;
-        }
-        p {
-          font-size: 16px;
-          padding-bottom: 30px;
-        }
-      }
-    }
-  }
+  // }
 }
