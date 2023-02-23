@@ -18,17 +18,18 @@ section {
   padding: 20px 0;
 }
 .header {
-  background-color: #edf2ec;
+  background-color: $light_green;
   max-width: 1440px;
   margin: 0 auto;
 }
 
-.header-container {
+.container {
   padding: 0 15px;
 }
 .header-wrap {
   display: flex;
   justify-content: space-between;
+  padding: 0 70px;
 
   .logo {
     padding: 0 23px;
@@ -78,20 +79,23 @@ section {
 }
 
 @media (max-width: 380px) {
-  .header {
-    max-width: 380px;
-  }
-
   ul {
     overflow: hidden;
     width: 20px;
     height: 20px;
   }
+  .header-wrap {
+    padding: 0 25px;
+  }
 }
 
-@media (max-width: 620px) {
+@media (max-width: 760px) {
   .header {
-    max-width: 620px;
+    max-width: 760px;
+    padding: 34px 0;
+  }
+  .header-wrap {
+    padding: 0 35px;
   }
   nav {
     background: url("../img/burger.png") no-repeat;
