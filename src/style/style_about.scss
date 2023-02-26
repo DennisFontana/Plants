@@ -1,0 +1,76 @@
+.about {
+  padding: 92px 0;
+}
+.about-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+  }
+  .about-info {
+    width: 605px;
+    @media (max-width: 760px) {
+      width: auto;
+    }
+
+    .about-info-content {
+      display: flex;
+      flex-direction: column;
+
+      .about-title {
+        font-family: "Inika";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+        color: $green;
+        margin-bottom: 40px;
+
+        @media (max-width: 760px) {
+          font-size: 35px;
+        }
+        @media (max-width: 360px) {
+          font-size: 25px;
+        }
+
+        span {
+          display: inline-block;
+          color: #e06733;
+        }
+      }
+      .title-description {
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30px;
+        color: $black;
+        @media (max-width: 360px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .about-img {
+    width: 464px;
+    height: 479px;
+    @media (max-width: 760px) {
+      width: 250px;
+      height: 258px;
+    }
+    @media (max-width: 360px) {
+      width: 150px;
+      height: 147px;
+    }
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

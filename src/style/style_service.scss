@@ -1,0 +1,128 @@
+.service {
+  background-color: $light_green;
+  padding: 40px 0;
+}
+
+.service-wrap {
+  .service-content {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 90px;
+
+    @media (max-width: 760px) {
+      flex-direction: column;
+      padding-bottom: 40px;
+    }
+
+    .service-content-title {
+      @media (max-width: 760px) {
+        padding-bottom: 40px;
+      }
+
+      p {
+        font-family: "Inika";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 40px;
+        line-height: 52px;
+        color: $green;
+        @media (max-width: 760px) {
+          font-size: 35px;
+        }
+        @media (max-width: 360px) {
+          font-size: 25px;
+        }
+      }
+    }
+    .btns {
+      width: 760px;
+      display: flex;
+      @media (max-width: 760px) {
+        width: auto;
+
+        :last-child {
+          margin-right: 0;
+        }
+      }
+      @media (max-width: 360px) {
+        flex-wrap: wrap;
+      }
+
+      button {
+        width: 161px;
+        height: 50px;
+        border: 1px solid $orange;
+        border-radius: 5px;
+        background-color: $light_green;
+        font-family: "Inika";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        color: $orange;
+        margin-right: 40px;
+
+        @media (max-width: 360px) {
+          width: 121px;
+          height: 35px;
+          font-size: 15px;
+          margin-right: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+  .service-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    @media (max-width: 360px) {
+      justify-content: center;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px 20px 20px 20px;
+      border: 1px solid #e3e1d5;
+      margin-bottom: 55px;
+
+      .card-img {
+        width: 329px;
+        height: 350px;
+        padding-bottom: 10px;
+        img {
+          object-fit: cover;
+          object-position: center;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .card-info {
+        text-align: center;
+        padding-bottom: 36px;
+
+        .title-card {
+          padding-bottom: 10px;
+          p {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            color: $orange;
+          }
+        }
+        .description-card {
+          font-family: "Inter";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 20px;
+          color: $black;
+        }
+      }
+    }
+  }
+}
