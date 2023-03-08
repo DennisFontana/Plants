@@ -1,0 +1,28 @@
+.footer-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+
+  @media (max-width: 760px) {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .footer-data {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 20px;
+  }
+
+  .footer-text {
+  }
+
+  .footer-social-list {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 30px;
+    }
+  }
+}
