@@ -3,6 +3,10 @@
   .prices-wrap {
     display: flex;
     justify-content: space-between;
+    @media (max-width: 590px) {
+      flex-direction: column;
+      row-gap: 20px;
+    }
     @media (max-width: 360px) {
       flex-direction: column;
       row-gap: 20px;
@@ -14,6 +18,10 @@
       row-gap: 60px;
       @media (max-width: 760px) {
         row-gap: 50px;
+      }
+      @media (max-width: 590px) {
+        align-items: center;
+        row-gap: 40px;
       }
       @media (max-width: 360px) {
         align-items: center;
@@ -301,6 +309,13 @@
       width: 296px;
       row-gap: 21px;
       justify-content: end;
+    }
+
+    @media (max-width: 690px) {
+      align-items: center;
+      width: 230px;
+      margin: 0 auto;
+      text-align: center;
     }
     @media (max-width: 360px) {
       align-items: center;

@@ -2,12 +2,12 @@ section {
   padding-bottom: 0;
 
   .contact-wrap {
+    margin: 0 -15px;
     display: flex;
-    justify-content: space-between;
-    column-gap: 15px;
 
     @media (max-width: 760px) {
       flex-direction: column;
+      justify-content: space-between;
       row-gap: 30px;
       align-items: center;
       height: 760px;
@@ -36,48 +36,81 @@ section {
         height: 124px;
       }
     }
-    .contact-text {
-      h2 {
-        font-family: "Inika";
-        font-style: normal;
-        font-weight: 700;
-        font-size: 40px;
-        color: $green;
-        @media (max-width: 360px) {
+    .contact-content {
+      display: flex;
+      flex-direction: column;
+      width: 650px;
+
+      @media (max-width: 760px) {
+        align-items: center;
+      }
+
+      @media (max-width: 660px) {
+        width: 350px;
+      }
+      @media (max-width: 360px) {
+        width: 150px;
+      }
+
+      .contact-text {
+        margin-bottom: 80px;
+
+        h2 {
+          margin: 0 15px;
           width: 192px;
-          height: 34px;
-          font-size: 25px;
-          text-align: center;
+          font-family: "Inika";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 40px;
+          color: $green;
+          @media (max-width: 360px) {
+            width: 192px;
+            height: 34px;
+            font-size: 25px;
+            text-align: center;
+          }
         }
       }
-    }
-    .contact-container {
-      width: 450px;
-      height: 50px;
-      background: #d6e7d2;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border-radius: 0px;
-      align-self: center;
 
-      @media (max-width: 360px) {
-        width: 300px;
-        height: 50px;
-      }
+      .contact-container {
+        margin: 0 15px;
+        width: 60%;
+        background: #d6e7d2;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 0px;
+        align-self: flex-end;
 
-      .contact-area {
-        display: flex;
-        justify-content: space-between;
-        align-items: baseline;
-        padding: 0 20px;
+        @media (max-width: 760px) {
+          width: 450px;
+          height: 50px;
+          align-self: auto;
+        }
 
-        span {
+        @media (max-width: 590px) {
+          width: 80%;
+        }
+
+        .contact-area {
+          display: block;
           font-family: "Inter";
           font-style: normal;
           font-weight: 400;
           font-size: 20px;
-          line-height: 40px;
           letter-spacing: 0.05em;
           color: #717171;
+          background: #c1e698;
+          border: 1px solid #d6e7d2;
+          padding: 0.6em 1.4em 0.5em 0.8em;
+          width: 100%;
+
+          option {
+            font-family: "Inter";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 40px;
+            letter-spacing: 0.05em;
+          }
         }
       }
     }
